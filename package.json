@@ -1,5 +1,5 @@
 {
-  "name": "note-taker",
+  "name": "the-note-taker",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -7,21 +7,14 @@
     "test": "jest",
     "start": "node server.js"
   },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.18.1",
-    "heroku": "^7.60.2",
-    "jest": "^28.1.0",
-    "uuid": "^8.3.2"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Azariill/noteTaker.git"
+    "url": "git+https://github.com/Judgedgeo/The-note-taker.git"
   },
+  "author": "",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Azariill/noteTaker/issues"
+    "url": "https://github.com/Judgedgeo/The-note-taker/issues"
   },
-  "homepage": "https://github.com/Azariill/noteTaker#readme"
-}n
+  "homepage": "https://github.com/Judgedgeo/The-note-taker#readme"
 }
