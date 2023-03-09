@@ -33,12 +33,12 @@ router.post("/notes", (req,res) =>{
 
      fs.writeFile(
         './data/db.json',
-        JSON.stringify({notes},null,4),
+        JSON.stringify(notes),
         (err) =>
             err ? console.error(err) : console.info('Successfully updated notes!')
     );
 
-    res.json();
+    res.json(notes);
 
 })
 
@@ -51,7 +51,7 @@ router.delete("/notes/:id",(req,res)=>{
 
     fs.writeFile(
         './data/db.json',
-        JSON.stringify({notes},null,4),
+        JSON.stringify(notes),
         (err) =>
             err ? console.error(err) : console.info('Successfully updated notes!')
     );
