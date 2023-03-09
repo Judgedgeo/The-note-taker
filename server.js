@@ -1,8 +1,8 @@
 // initilze server
 const express = require('express');
 const app = express();
-const apiRoutes = require('/routes/apiRoutes');
-const htmlRoutes = require('/routes/htmlRoutes');
+const apiRoutes = require('./routes/apiRoutes');
+const htmlRoutes = require('./routes/htmlRoutes');
 
 
 // parse incoming string or array data

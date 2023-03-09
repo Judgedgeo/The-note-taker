@@ -1,20 +1,29 @@
 {
   "name": "the-note-taker",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.6.9",
+  "description": "A place to take notes.",
   "main": "server.js",
   "scripts": {
-    "test": "jest",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Judgedgeo/The-note-taker.git"
   },
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "note",
+    "taker"
+  ],
+  "author": "Judgedgeo",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Judgedgeo/The-note-taker/issues"
   },
-  "homepage": "https://github.com/Judgedgeo/The-note-taker#readme"
+  "homepage": "https://github.com/Judgedgeo/The-note-taker#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "npm": "^9.6.1",
+    "uuid": "^9.0.0"
+  }
 }
