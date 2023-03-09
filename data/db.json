@@ -1,6 +1,25 @@
-[
-    {
-        "title":"Test Title",
-        "text":"Test text"
+{
+    "notes": {
+        "notes": [
+            {
+                "title": "Test Title",
+                "text": "Test text"
+            },
+            {
+                "title": "sddsdad",
+                "text": "dadada",
+                "id": "ed8e0412-6a7c-4ca4-802b-38c70451a203"
+            },
+            {
+                "title": ",mml;",
+                "text": "ryr",
+                "id": "bc7776c7-5b02-4303-bc39-514257eae52e"
+            },
+            {
+                "title": "fgjgfj",
+                "text": "gjgjg",
+                "id": "cc2080a6-e659-49f4-a6f8-01575c46ef47"
+            }
+        ]
     }
-]
+}

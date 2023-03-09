@@ -12,7 +12,7 @@ if (window.location.pathname === '/notes') {
   newNoteBtn = document.querySelector('.new-note');
   noteList = document.querySelectorAll('.list-container .list-group');
 }
-0
+
 
 // Show an element
 const show = (elem) => {
@@ -116,6 +116,9 @@ const handleNewNoteView = (e) => {
 };
 
 const handleRenderSaveBtn = () => {
+// console.log(noteTitle.value);
+// console.log(noteText.value);
+// debugger;
   if (!noteTitle.value.trim() || !noteText.value.trim()) {
     hide(saveNoteBtn);
   } else {
@@ -125,8 +128,8 @@ const handleRenderSaveBtn = () => {
 
 // Render the list of note titles
 const renderNoteList = async (notes) => {
+
   let jsonNotes = await notes.json();
-  console.log(notes);
   if (window.location.pathname === '/notes') {
     noteList.forEach((el) => (el.innerHTML = ''));
   }
@@ -180,10 +183,9 @@ const renderNoteList = async (notes) => {
 
 
 // Gets notes from the db and renders them to the sidebar
-const getAndRenderNotes = () => getNotes().then(renderNoteList);
-
-
-
+function getAndRenderNotes() {
+  return getNotes().then(renderNoteList);
+}
 
 
 if (window.location.pathname === '/notes') {
@@ -191,9 +193,6 @@ if (window.location.pathname === '/notes') {
   newNoteBtn.addEventListener('click', handleNewNoteView);
   noteTitle.addEventListener('keyup', handleRenderSaveBtn);
   noteText.addEventListener('keyup', handleRenderSaveBtn);
-
-
-
 }
 
 getAndRenderNotes();
